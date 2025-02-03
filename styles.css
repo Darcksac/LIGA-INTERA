@@ -8,14 +8,14 @@
 /* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #076e72;
     color: #333;
     line-height: 1.6;
 }
 
 /* Contenedor principal */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 30px;
     background-color: #fff;
@@ -26,9 +26,10 @@ body {
 /* Títulos principales */
 h1 {
     text-align: center;
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    background-image: url('ruta/a/tu/imagen.jpg');
+    background-size: cover;
+    color: transparent;
+    padding: 50px;
 }
 
 h2 {
@@ -51,7 +52,7 @@ th, td {
 }
 
 th {
-    background-color: #10d4df;
+    background-color: #031e20;
     color: white;
     font-weight: bold;
 }
@@ -125,6 +126,13 @@ a.btn:hover {
 /* Estilo de la tabla de partidos */
 #tablaPartidos, #tablaGoleadores {
     margin-top: 20px;
+}
+
+/* Escudos de los equipos */
+td img {
+    width: 40px;
+    height: 40px; /* Ajuste para que todos los escudos tengan la misma altura y ancho */
+    object-fit: contain; /* Mantiene la proporción del escudo sin distorsionarlo */
 }
 
 /* Estilo para los campos del formulario de partidos */
