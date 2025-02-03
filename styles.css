@@ -61,7 +61,7 @@ tr:hover {
     background-color: #f2f2f2;
 }
 
-/* Estilo para los formularios */
+/* Estilos para los formularios */
 form {
     display: flex;
     flex-direction: column;
@@ -151,4 +151,105 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: #218838;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reducir el tamaño del título */
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    td, th {
+        font-size: 0.9rem; /* Reducir tamaño de texto en tablas */
+        padding: 8px 10px; /* Ajustar los espacios */
+    }
+
+    td img {
+        width: 35px;
+        height: 35px; /* Ajustar tamaño de los escudos */
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="datetime-local"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Para pantallas más grandes (tablets y escritorios pequeños) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td, th {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+
+    td img {
+        width: 45px;
+        height: 45px;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Para pantallas muy grandes (desktops) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 4rem;
+        padding: 60px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    td img {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        padding: 14px 22px;
+        font-size: 1.2rem;
+    }
 }
