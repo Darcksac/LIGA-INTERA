@@ -14,13 +14,64 @@ body {
 }
 
 /* Contenedor principal */
+/* Contenedor principal */
 .container {
-    max-width: 1000px;
+    width: 90%; /* Ajuste al 90% del ancho de la pantalla */
+    max-width: 1000px; /* Asegura que el contenedor no crezca más allá de este valor */
     margin: 40px auto;
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .container {
+        width: 120%; /* Hacer que ocupe un 95% del ancho de la pantalla */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reducir el tamaño del título */
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    td, th {
+        font-size: 0.9rem; /* Reducir tamaño de texto en tablas */
+        padding: 8px 10px; /* Ajustar los espacios */
+    }
+
+    td img {
+        width: 35px;
+        height: 35px; /* Ajustar tamaño de los escudos */
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="datetime-local"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
 }
 
 /* Títulos principales */
@@ -247,6 +298,13 @@ form button[type="submit"]:hover {
         width: 50px;
         height: 50px;
     }
+
+    button {
+        padding: 14px 22px;
+        font-size: 1.2rem;
+    }
+}
+
 
     button {
         padding: 14px 22px;
