@@ -128,6 +128,92 @@ input[type="number"] {
     border-radius: 5px;
     font-size: 1rem;
     width: 100%;
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo más suave */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ajuste al 90% del ancho de la pantalla */
+    max-width: 1000px; /* Asegura que el contenedor no crezca más allá de este valor */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+/* Títulos principales */
+h1 {
+    text-align: center;
+    background-image: url('ruta/a/tu/imagen.jpg');
+    background-size: cover;
+    color: transparent;
+    padding: 50px;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center; /* Centrado del subtítulo */
+}
+
+/* Estilo de las tablas */
+table {
+    width: 100%;
+    margin: 40px auto; /* Centrado de la tabla */
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
+    background-color: #fff; /* Fondo blanco para la tabla */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+th, td {
+    padding: 15px 20px; /* Espaciado mejorado */
+    text-align: center; /* Centramos el texto */
+    border-bottom: 1px solid #ddd; /* Línea sutil de separación entre filas */
+}
+
+th {
+    background-color: #076e72; /* Color de fondo más suave para los encabezados */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Títulos en mayúsculas */
+}
+
+tr:hover {
+    background-color: #f2f2f2; /* Color suave al pasar el mouse */
+}
+
+/* Estilos para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="datetime-local"],
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -174,16 +260,11 @@ a.btn:hover {
     background-color: #0056b3;
 }
 
-/* Estilo de la tabla de partidos */
-#tablaPartidos, #tablaGoleadores {
-    margin-top: 20px;
-}
-
 /* Escudos de los equipos */
 td img {
     width: 40px;
-    height: 40px; /* Ajuste para que todos los escudos tengan la misma altura y ancho */
-    object-fit: contain; /* Mantiene la proporción del escudo sin distorsionarlo */
+    height: 40px;
+    object-fit: contain;
 }
 
 /* Estilo para los campos del formulario de partidos */
