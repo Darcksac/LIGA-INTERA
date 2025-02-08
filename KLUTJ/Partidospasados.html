@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Fútbol Universitario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Estilos para el navbar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        nav a.active {
+            background-color: #1e0ceb;
+            color: white;
+        }
+
+        /* Estilos para el banner */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 250px; /* Altura del banner */
+            background-image: url('imgs/ban.avif'); /* Cambia 'banner.jpg' por la imagen del banner */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilo para el logo */
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px; /* Tamaño del logo */
+        }
+
+        /* Resto de los estilos */
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Incio</a>
+        <a href="Tablageneral.html">Tablas Generales</a>
+        <a href="Tabladegoleo.html">Tabla de Goleo</a>
+        <a href="Partidospasados.html" class="active">Partidos Pasados</a>
+        <a href="Proximospartidos.html">Partidos Programados</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="imgs/logo.png" alt="Logo del Torneo" class="logo"> <!-- Logo encima del banner -->
+    </div>
+        
+        
+                <h2>Partidos Pasados</h2>
+                <table id="tablaPartidos">
+                    <h2>J1</h2>
+                    <thead>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Escudo Local</th> 
+                            <th>Equipo Local</th>
+                            <th>Escudo Visitante</th> <!-- Nueva columna para el escudo del equipo visitante -->
+                            <th>Equipo Visitante</th>
+                            <th>Local</th>
+                            <th>Visita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gana Lobos Dom</td>
+                            <td><img src="imgs/lob.png" alt="Escudo Tecolotes" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>LOBO DOM</td>
+                            <td><img src="imgs/nec.png" alt="Escudo España" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>NECAXA</td>
+                            <td>5</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Gana Barcelona</td>
+                            <td><img src="imgs/bar.png" alt="Escudo Barcelona" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>BARCELONA</td>
+                            <td><img src="imgs/esp.png" alt="Escudo Necaxa" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>ESPAÑA</td>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Gana Pablos</td>
+                            <td><img src="imgs/mec.png" alt="Escudo Mecas FC" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>MECAS FC</td>
+                            <td><img src="imgs/pab.png" alt="Escudo Iguanorangers" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>PABLOS</td>
+                            <td>2</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Gana Vodka</td>
+                            <td><img src="imgs/vjr.png" alt="Escudo Vodka Juniors" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>VODKA JR</td>
+                            <td><img src="imgs/ign.png" alt="Escudo Kaprichos FC" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>IGUANORANGERS</td>
+                            <td>8</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Gana Inges FC</td>
+                            <td><img src="imgs/tec.png" alt="Escudo Lobo Domesticado" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>TECOLOTES</td>
+                            <td><img src="imgs/ifc.png" alt="Escudo Inges FC" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>INGES FC</td>
+                            <td>3</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>Gana Kaprichos</td>
+                            <td><img src="imgs/jest.png" alt="Escudo Jets FC" width="40"></td> <!-- Escudo del equipo local -->
+                            <td>JETS FC</td>
+                            <td><img src="imgs/cap.png" alt="Escudo Los Pablos" width="40"></td> <!-- Escudo del equipo visitante -->
+                            <td>KAPRICHOS</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+<table id="tablaPartidos">
+    <thead>
+        <h2>J2</h2>
+        <tr>
+            <th>Estado</th>
+            <th>Escudo Local</th> 
+            <th>Equipo Local</th>
+            <th>Escudo Visitante</th> <!-- Nueva columna para el escudo del equipo visitante -->
+            <th>Equipo Visitante</th>
+            <th>Local</th>
+            <th>Visita</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gana Tecolotes por default</td>
+            <td><img src="imgs/tec.png" alt="Escudo Tecolotes" width="40"></td> <!-- Escudo del equipo local -->
+            <td>TECOLOTES</td>
+            <td><img src="imgs/esp.png" alt="Escudo España" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>ESPAÑA</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Gana Barcelona por default</td>
+            <td><img src="imgs/bar.png" alt="Escudo Barcelona" width="40"></td> <!-- Escudo del equipo local -->
+            <td>BARCELONA</td>
+            <td><img src="imgs/nec.png" alt="Escudo Necaxa" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>NECAXA</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Gana Iguanorangers</td>
+            <td><img src="imgs/mec.png" alt="Escudo Mecas FC" width="40"></td> <!-- Escudo del equipo local -->
+            <td>MECAS FC</td>
+            <td><img src="imgs/ign.png" alt="Escudo Iguanorangers" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>IGUANORANGERS</td>
+            <td>2</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Gana Kaprichos</td>
+            <td><img src="imgs/vjr.png" alt="Escudo Vodka Juniors" width="40"></td> <!-- Escudo del equipo local -->
+            <td>VODKA JR</td>
+            <td><img src="imgs/cap.png" alt="Escudo Kaprichos FC" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>KAPRICHOS FC</td>
+            <td>6</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Gana Inges FC</td>
+            <td><img src="imgs/lob.png" alt="Escudo Lobo Domesticado" width="40"></td> <!-- Escudo del equipo local -->
+            <td>LOBO DOM</td>
+            <td><img src="imgs/ifc.png" alt="Escudo Inges FC" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>INGES FC</td>
+            <td>4</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Gana Jets</td>
+            <td><img src="imgs/jest.png" alt="Escudo Jets FC" width="40"></td> <!-- Escudo del equipo local -->
+            <td>JETS FC</td>
+            <td><img src="imgs/pab.png" alt="Escudo Los Pablos" width="40"></td> <!-- Escudo del equipo visitante -->
+            <td>LOS PABLOS</td>
+            <td>9</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+
+        
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+        // Aquí puedes agregar funciones de JavaScript si es necesario para editar los datos directamente
+    </script>
+</body>
+</html>
